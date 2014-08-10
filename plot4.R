@@ -32,20 +32,9 @@ epc$DatePOS <- strptime(paste(epc$Date,epc$Time), "%d/%m/%Y %H:%M:%S")
 
 ## Open the PNG device, create the plot and then close the device
 
-## png("plot3.png", 
-##     width=480, height=480, units="px")  
+png("plot4.png", 
+    width=480, height=480, units="px")  
 
-## with(epc, plot(epc$DatePOS, epc$Sub_metering_1, type = "l", col = "black",
-##                xlab = "", ylab = "Energy sub metering"))
-
-## lines(epc$DatePOS, epc$Sub_metering_2, type = "l", col = "red")
-## lines(epc$DatePOS, epc$Sub_metering_3, type = "l", col = "blue")
-
-## legend("topright", lty = c(1,1), lwd = c(2.5, 2.5), col = c("black", "red", "blue"), 
-##        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
-##        cex = 0.75)
-
-## dev.off() ## close the device
 
 
 par(mfcol = c(2, 2), mar = c(4, 5, 2, 1), oma = c(0, 0, 2, 0))
@@ -71,3 +60,5 @@ plot(epc$DatePOS, epc$Voltage, type = "l",
 plot(epc$DatePOS, epc$Global_reactive_power, type = "l",
      xlab = "datetime", ylab = "Global_reactive_power")
 
+
+dev.off() ## close the device
