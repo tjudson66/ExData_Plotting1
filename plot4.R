@@ -1,6 +1,6 @@
 ## coursera: Exploratory Data Analysis
 ## 4th in the Data Specialization Series
-## plot4.R - Download and plot a line graph
+## plot4.R - Download and plot a line graph 
 
 
 ## This script will:
